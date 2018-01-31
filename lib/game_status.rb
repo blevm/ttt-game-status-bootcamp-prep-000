@@ -52,9 +52,7 @@ def over?(board)
 end
 
 def winner(board)
- if position_taken?(board, index).even?
-   "X"
- else
-   "O"
+ if won?(board)
+   return [board[WIN_COMBINATIONS[0]]]
  end
 end
