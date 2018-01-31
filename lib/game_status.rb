@@ -34,8 +34,7 @@ def won?(board)
 end
 
 def full?(board)
-  full = board.all? do |index|
-    position_taken?(board, index)
+  board.all? do |index|
+    position_taken?('board', 'index')
   end
-  full
 end
