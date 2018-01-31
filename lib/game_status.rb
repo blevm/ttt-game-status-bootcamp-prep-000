@@ -50,3 +50,11 @@ def over?(board)
     return true
   end
 end
+
+def winner?(board)
+ if position_taken?(board, index).even?
+   "X"
+ else
+   "O"
+ end
+end
