@@ -3,7 +3,6 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],
@@ -26,10 +25,10 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
 
-      if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return win_combination
-      else
-        false
-      end
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win_combination
+    else
+      false
+    end
   end
 end
