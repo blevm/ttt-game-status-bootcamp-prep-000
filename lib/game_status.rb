@@ -34,7 +34,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |index|
-    index.include("X"||"O")
-  end
+  board.include("X"||"O")
 end
