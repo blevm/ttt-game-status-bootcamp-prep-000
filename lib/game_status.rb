@@ -35,6 +35,6 @@ end
 
 def full?(board)
   board.all? do |index|
-    index.all?("X"||"O")
+    index.include?("X"||"O")
   end
 end
