@@ -51,7 +51,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
  if position_taken?(board, index).even?
    "X"
  else
