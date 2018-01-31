@@ -35,6 +35,6 @@ end
 
 def full?(board)
   board.any? do |index|
-    index.include("  " || " " || nil)
+    index.include(" ")
   end
 end
