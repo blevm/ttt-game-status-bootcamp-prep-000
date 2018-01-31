@@ -38,3 +38,9 @@ def full?(board)
     index.include?("X") || index.include?("O")
   end
 end
+
+def draw?(board)
+  if !won?(board) && full(board)
+    return true
+  end
+end
